@@ -8,3 +8,10 @@ function palindrome(str) {
     return false;
   }
 }
+
+$(function(){
+  $('#palInput').submit(function(event){
+    event.preventDefault();
+    $('#result').show();  
+  });
+});
